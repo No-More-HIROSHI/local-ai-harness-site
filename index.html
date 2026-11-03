@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>local-ai-harness</title><meta name="description" content="YouTubeチャンネルの運営者が自分のMacで使う、コメント返信の作業支援ツール。"><style>
+:root{--ink:#16201F;--mute:#5f6b69;--bg:#F4F5F7;--card:#fff;--accent:#3B5BA9}
+@media(prefers-color-scheme:dark){:root{--ink:#EEF1F5;--mute:#A9B1BC;--bg:#13161B;--card:#1D2129;--accent:#8EA8E8}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;line-height:1.8}
+main{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:24px}
+header .mark{width:40px;height:40px;border-radius:10px;background:var(--accent);position:relative}
+header .mark::after{content:"";position:absolute;inset:11px 9px;border:3px solid #fff;border-radius:6px}
+header h1{font-size:20px;margin:0}
+nav a{color:var(--accent);text-decoration:none;margin-right:16px}
+article{background:var(--card);border-radius:16px;padding:24px 24px 8px;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+h2{font-size:22px;margin:0 0 8px}h3{font-size:17px;margin:28px 0 8px;color:var(--accent)}
+p,li{color:var(--ink)}small,.mute{color:var(--mute)}ul,ol{padding-left:22px}a{color:var(--accent)}
+footer{margin-top:24px;font-size:13px;color:var(--mute)}
+</style></head>
+<body><main>
+<header><div class="mark"></div><h1>local-ai-harness</h1></header>
+<nav><a href="./">紹介</a><a href="./privacy.html">プライバシーポリシー</a><a href="./terms.html">利用規約</a></nav>
+<article><h2>local-ai-harness とは</h2>
+<p>local-ai-harness は、YouTubeチャンネルの運営者が自分のパソコン（Mac）で動かす、個人用の作業支援ツールです。視聴者からのコメントに、内容に合った返信をするための下準備を手伝います。</p>
+<p><strong>使うのは運営者本人だけです。</strong>一般に公開しているアプリではなく、ほかの人がログインして使うことは想定していません。</p>
+<h3>YouTube に対して行うこと</h3>
+<ul>
+<li>運営者自身のチャンネルの動画情報・概要欄・字幕・コメントを読み取ります。</li>
+<li>コメントへの返信案を作ります。返信案は、運営者が内容を確認して承認したものだけを、運営者のチャンネルから投稿します。</li>
+<li>視聴者からの指摘を受けて、運営者が承認した場合にだけ、運営者自身の動画の概要欄と字幕を更新します。</li>
+</ul>
+<h3>行わないこと</h3>
+<ul>
+<li>コメントの削除・非表示、ユーザーのブロックは行いません。</li>
+<li>運営者が承認していない投稿・更新は行いません。</li>
+<li>読み取った情報を販売したり、広告に使ったりしません。</li>
+</ul>
+<h3>Google アカウントでのログイン</h3>
+<p>YouTube の情報を読み書きするために、運営者本人の Google アカウントで、Google の仕組み（OAuth）を使ってログインします。情報の扱いは<a href="./privacy.html">プライバシーポリシー</a>、利用の条件は<a href="./terms.html">利用規約</a>をご覧ください。</p>
+<h3>English</h3>
+<p class="mute">local-ai-harness is a personal tool that a YouTube channel owner runs on their own Mac to draft replies to comments on their own channel. Only the owner uses it. It reads the owner's videos, descriptions, captions and comments through the YouTube Data API, and posts replies or updates descriptions and captions only after the owner approves each one. See the <a href="./privacy.html">Privacy Policy</a> and <a href="./terms.html">Terms of Service</a>.</p>
+</article>
+<footer>© 2026 local-ai-harness</footer>
+</main></body></html>
